@@ -8,12 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var uiImage = UIImage(named: "cyber")
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            if let uiImage {
+                Image(uiImage: uiImage)
+                    .resizable()
+                    .scaledToFit()
+            }
+            
+            Text("Image View and Edit")
         }
         .padding()
     }
