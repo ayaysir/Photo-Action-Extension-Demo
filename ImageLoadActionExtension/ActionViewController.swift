@@ -21,27 +21,63 @@ class ActionViewController: UIViewController {
         // For example, look for an image and place it into an image view.
         // Replace this with something appropriate for the type[s] your extension supports.
         var imageFound = false
-        for item in self.extensionContext!.inputItems as! [NSExtensionItem] {
-            for provider in item.attachments! {
+        guard let inputItems = extensionContext?.inputItems as? [NSExtensionItem] else {
+            return
+        }
+        
+        for item in inputItems {
+            guard let attachments = item.attachments else {
+                break
+            }
+            
+            for provider in attachments {
                 if provider.hasItemConformingToTypeIdentifier(UTType.image.identifier) {
                     // This is an image. We'll load it, then place it in our image view.
-                    weak var weakImageView = self.imageView
-                    provider.loadItem(forTypeIdentifier: UTType.image.identifier, options: nil, completionHandler: { (imageURL, error) in
+                    weak var imageView = self.imageView
+                    
+                    provider.loadImage(forTypeIdentifier: UTType.image.identifier) { image, error in
+                        if let error {
+                            print(error)
+                            return
+                        }
+                        
                         OperationQueue.main.addOperation {
-                            if let strongImageView = weakImageView {
-                                if let imageURL = imageURL as? URL {
-                                    strongImageView.image = UIImage(data: try! Data(contentsOf: imageURL))
+                            if let image, let imageView {
+                                DispatchQueue.main.async {
+                                    imageView.image = image
                                 }
                             }
                         }
-                    })
+                    }
+                    
+                    // provider.loadItem(forTypeIdentifier: UTType.image.identifier, options: nil) { data, error in
+                    //     OperationQueue.main.addOperation {
+                    //         if let imageView {
+                    //             let contentData: Data? = {
+                    //                 return if let data = data as? Data {
+                    //                     data
+                    //                 } else if let url = data as? URL {
+                    //                     try? Data(contentsOf: url)
+                    //                 } else if let imageData = data as? UIImage {
+                    //                     imageData.pngData()
+                    //                 } else {
+                    //                     nil
+                    //                 }
+                    //             }()
+                    //             
+                    //             if let contentData {
+                    //                 imageView.image = UIImage(data: contentData)
+                    //             }
+                    //         }
+                    //     }
+                    // }
                     
                     imageFound = true
                     break
                 }
             }
             
-            if (imageFound) {
+            if imageFound {
                 // We only handle one image, so stop looking for more.
                 break
             }
@@ -51,7 +87,19 @@ class ActionViewController: UIViewController {
     @IBAction func done() {
         // Return any edited content to the host app.
         // This template doesn't do anything, so we just echo the passed in items.
-        self.extensionContext!.completeRequest(returningItems: self.extensionContext!.inputItems, completionHandler: nil)
+        // self.extensionContext!.completeRequest(returningItems: self.extensionContext!.inputItems, completionHandler: nil)
+        print(#function)
+        
+        let itemProvider = NSItemProvider(item: imageView.image as NSSecureCoding?, typeIdentifier: UTType.image.identifier)
+        
+        let item = NSExtensionItem()
+        item.attachments = [itemProvider]
+        
+        if let extensionContext {
+            extensionContext.completeRequest(returningItems: [item], completionHandler: nil)
+        } else {
+            print("extensionContext가 없습니다.")
+        }
     }
 
 }

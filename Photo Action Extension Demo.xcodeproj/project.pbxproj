@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44A903002BE238420009EE2A /* NSItemProvider+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A902FF2BE238420009EE2A /* NSItemProvider+Utils.m */; };
+		44A903012BE238420009EE2A /* NSItemProvider+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A902FF2BE238420009EE2A /* NSItemProvider+Utils.m */; };
+		44A903022BE238420009EE2A /* NSItemProvider+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A902FF2BE238420009EE2A /* NSItemProvider+Utils.m */; };
 		44D1C54C2BE0B77B003AA7C9 /* Photo_Action_Extension_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D1C54B2BE0B77B003AA7C9 /* Photo_Action_Extension_DemoApp.swift */; };
 		44D1C54E2BE0B77B003AA7C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D1C54D2BE0B77B003AA7C9 /* ContentView.swift */; };
 		44D1C5502BE0B77C003AA7C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44D1C54F2BE0B77C003AA7C9 /* Assets.xcassets */; };
@@ -16,6 +19,11 @@
 		44D1C5652BE0B86C003AA7C9 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D1C5642BE0B86C003AA7C9 /* ActionViewController.swift */; };
 		44D1C5682BE0B86C003AA7C9 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 44D1C5672BE0B86C003AA7C9 /* Base */; };
 		44D1C56C2BE0B86C003AA7C9 /* ImageLoadActionExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 44D1C55D2BE0B86C003AA7C9 /* ImageLoadActionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		44D1C5762BE140EB003AA7C9 /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D1C55F2BE0B86C003AA7C9 /* UniformTypeIdentifiers.framework */; };
+		44D1C5792BE140EB003AA7C9 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44D1C5782BE140EB003AA7C9 /* Media.xcassets */; };
+		44D1C57B2BE140EB003AA7C9 /* ActionRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D1C57A2BE140EB003AA7C9 /* ActionRequestHandler.swift */; };
+		44D1C57D2BE140EB003AA7C9 /* Action.js in Resources */ = {isa = PBXBuildFile; fileRef = 44D1C57C2BE140EB003AA7C9 /* Action.js */; };
+		44D1C5812BE140EB003AA7C9 /* ImageLoadActionExtension2.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 44D1C5752BE140EB003AA7C9 /* ImageLoadActionExtension2.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +33,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 44D1C55C2BE0B86C003AA7C9;
 			remoteInfo = ImageLoadActionExtension;
+		};
+		44D1C57F2BE140EB003AA7C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44D1C5402BE0B77A003AA7C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44D1C5742BE140EB003AA7C9;
+			remoteInfo = ImageLoadActionExtension2;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -36,6 +51,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				44D1C56C2BE0B86C003AA7C9 /* ImageLoadActionExtension.appex in Embed Foundation Extensions */,
+				44D1C5812BE140EB003AA7C9 /* ImageLoadActionExtension2.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,6 +59,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		44A902FB2BE238420009EE2A /* Photo Action Extension Demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Photo Action Extension Demo-Bridging-Header.h"; sourceTree = "<group>"; };
+		44A902FC2BE238420009EE2A /* ImageLoadActionExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ImageLoadActionExtension-Bridging-Header.h"; sourceTree = "<group>"; };
+		44A902FD2BE238420009EE2A /* ImageLoadActionExtension2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ImageLoadActionExtension2-Bridging-Header.h"; sourceTree = "<group>"; };
+		44A902FE2BE238420009EE2A /* NSItemProvider+Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSItemProvider+Utils.h"; sourceTree = "<group>"; };
+		44A902FF2BE238420009EE2A /* NSItemProvider+Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSItemProvider+Utils.m"; sourceTree = "<group>"; };
 		44D1C5482BE0B77B003AA7C9 /* Photo Action Extension Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Photo Action Extension Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44D1C54B2BE0B77B003AA7C9 /* Photo_Action_Extension_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo_Action_Extension_DemoApp.swift; sourceTree = "<group>"; };
 		44D1C54D2BE0B77B003AA7C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +75,12 @@
 		44D1C5642BE0B86C003AA7C9 /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
 		44D1C5672BE0B86C003AA7C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		44D1C5692BE0B86C003AA7C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44D1C5752BE140EB003AA7C9 /* ImageLoadActionExtension2.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ImageLoadActionExtension2.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		44D1C5782BE140EB003AA7C9 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		44D1C57A2BE140EB003AA7C9 /* ActionRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionRequestHandler.swift; sourceTree = "<group>"; };
+		44D1C57C2BE140EB003AA7C9 /* Action.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Action.js; sourceTree = "<group>"; };
+		44D1C57E2BE140EB003AA7C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44D1C5862BE225F8003AA7C9 /* 1.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = 1.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,14 +99,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		44D1C5722BE140EB003AA7C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44D1C5762BE140EB003AA7C9 /* UniformTypeIdentifiers.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		44D1C53F2BE0B77A003AA7C9 = {
 			isa = PBXGroup;
 			children = (
+				44D1C5852BE225E3003AA7C9 /* Report */,
 				44D1C54A2BE0B77B003AA7C9 /* Photo Action Extension Demo */,
 				44D1C5612BE0B86C003AA7C9 /* ImageLoadActionExtension */,
+				44D1C5772BE140EB003AA7C9 /* ImageLoadActionExtension2 */,
 				44D1C55E2BE0B86C003AA7C9 /* Frameworks */,
 				44D1C5492BE0B77B003AA7C9 /* Products */,
 			);
@@ -90,6 +127,7 @@
 			children = (
 				44D1C5482BE0B77B003AA7C9 /* Photo Action Extension Demo.app */,
 				44D1C55D2BE0B86C003AA7C9 /* ImageLoadActionExtension.appex */,
+				44D1C5752BE140EB003AA7C9 /* ImageLoadActionExtension2.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,8 +166,32 @@
 				44D1C5642BE0B86C003AA7C9 /* ActionViewController.swift */,
 				44D1C5662BE0B86C003AA7C9 /* MainInterface.storyboard */,
 				44D1C5692BE0B86C003AA7C9 /* Info.plist */,
+				44A902FE2BE238420009EE2A /* NSItemProvider+Utils.h */,
+				44A902FF2BE238420009EE2A /* NSItemProvider+Utils.m */,
+				44A902FB2BE238420009EE2A /* Photo Action Extension Demo-Bridging-Header.h */,
+				44A902FC2BE238420009EE2A /* ImageLoadActionExtension-Bridging-Header.h */,
+				44A902FD2BE238420009EE2A /* ImageLoadActionExtension2-Bridging-Header.h */,
 			);
 			path = ImageLoadActionExtension;
+			sourceTree = "<group>";
+		};
+		44D1C5772BE140EB003AA7C9 /* ImageLoadActionExtension2 */ = {
+			isa = PBXGroup;
+			children = (
+				44D1C5782BE140EB003AA7C9 /* Media.xcassets */,
+				44D1C57A2BE140EB003AA7C9 /* ActionRequestHandler.swift */,
+				44D1C57C2BE140EB003AA7C9 /* Action.js */,
+				44D1C57E2BE140EB003AA7C9 /* Info.plist */,
+			);
+			path = ImageLoadActionExtension2;
+			sourceTree = "<group>";
+		};
+		44D1C5852BE225E3003AA7C9 /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				44D1C5862BE225F8003AA7C9 /* 1.md */,
+			);
+			path = Report;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +210,7 @@
 			);
 			dependencies = (
 				44D1C56B2BE0B86C003AA7C9 /* PBXTargetDependency */,
+				44D1C5802BE140EB003AA7C9 /* PBXTargetDependency */,
 			);
 			name = "Photo Action Extension Demo";
 			productName = "Photo Action Extension Demo";
@@ -171,6 +234,23 @@
 			productReference = 44D1C55D2BE0B86C003AA7C9 /* ImageLoadActionExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		44D1C5742BE140EB003AA7C9 /* ImageLoadActionExtension2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44D1C5822BE140EB003AA7C9 /* Build configuration list for PBXNativeTarget "ImageLoadActionExtension2" */;
+			buildPhases = (
+				44D1C5712BE140EB003AA7C9 /* Sources */,
+				44D1C5722BE140EB003AA7C9 /* Frameworks */,
+				44D1C5732BE140EB003AA7C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageLoadActionExtension2;
+			productName = ImageLoadActionExtension2;
+			productReference = 44D1C5752BE140EB003AA7C9 /* ImageLoadActionExtension2.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -183,9 +263,15 @@
 				TargetAttributes = {
 					44D1C5472BE0B77B003AA7C9 = {
 						CreatedOnToolsVersion = 15.3;
+						LastSwiftMigration = 1530;
 					};
 					44D1C55C2BE0B86C003AA7C9 = {
 						CreatedOnToolsVersion = 15.3;
+						LastSwiftMigration = 1530;
+					};
+					44D1C5742BE140EB003AA7C9 = {
+						CreatedOnToolsVersion = 15.3;
+						LastSwiftMigration = 1530;
 					};
 				};
 			};
@@ -204,6 +290,7 @@
 			targets = (
 				44D1C5472BE0B77B003AA7C9 /* Photo Action Extension Demo */,
 				44D1C55C2BE0B86C003AA7C9 /* ImageLoadActionExtension */,
+				44D1C5742BE140EB003AA7C9 /* ImageLoadActionExtension2 */,
 			);
 		};
 /* End PBXProject section */
@@ -227,6 +314,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		44D1C5732BE140EB003AA7C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44D1C57D2BE140EB003AA7C9 /* Action.js in Resources */,
+				44D1C5792BE140EB003AA7C9 /* Media.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -234,6 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44A903002BE238420009EE2A /* NSItemProvider+Utils.m in Sources */,
 				44D1C54E2BE0B77B003AA7C9 /* ContentView.swift in Sources */,
 				44D1C54C2BE0B77B003AA7C9 /* Photo_Action_Extension_DemoApp.swift in Sources */,
 			);
@@ -243,7 +340,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44A903012BE238420009EE2A /* NSItemProvider+Utils.m in Sources */,
 				44D1C5652BE0B86C003AA7C9 /* ActionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44D1C5712BE140EB003AA7C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44A903022BE238420009EE2A /* NSItemProvider+Utils.m in Sources */,
+				44D1C57B2BE140EB003AA7C9 /* ActionRequestHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +361,11 @@
 			isa = PBXTargetDependency;
 			target = 44D1C55C2BE0B86C003AA7C9 /* ImageLoadActionExtension */;
 			targetProxy = 44D1C56A2BE0B86C003AA7C9 /* PBXContainerItemProxy */;
+		};
+		44D1C5802BE140EB003AA7C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44D1C5742BE140EB003AA7C9 /* ImageLoadActionExtension2 */;
+			targetProxy = 44D1C57F2BE140EB003AA7C9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -394,13 +506,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Photo Action Extension Demo/Preview Content\"";
 				DEVELOPMENT_TEAM = 6S2SA26VAN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "이미지 불러오고 편집하기";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -415,6 +527,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bgsmm.Photo-Action-Extension-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ImageLoadActionExtension/Photo Action Extension Demo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -426,13 +540,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Photo Action Extension Demo/Preview Content\"";
 				DEVELOPMENT_TEAM = 6S2SA26VAN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "이미지 불러오고 편집하기";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -447,6 +561,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bgsmm.Photo-Action-Extension-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ImageLoadActionExtension/Photo Action Extension Demo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -455,12 +570,13 @@
 		44D1C56E2BE0B86C003AA7C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6S2SA26VAN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ImageLoadActionExtension/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = ImageLoadActionExtension;
+				INFOPLIST_KEY_CFBundleDisplayName = "PAED: 이미지 편집하고 불러오기";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -473,6 +589,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ImageLoadActionExtension/ImageLoadActionExtension-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -481,12 +599,13 @@
 		44D1C56F2BE0B86C003AA7C9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6S2SA26VAN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ImageLoadActionExtension/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = ImageLoadActionExtension;
+				INFOPLIST_KEY_CFBundleDisplayName = "PAED: 이미지 편집하고 불러오기";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -499,6 +618,62 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ImageLoadActionExtension/ImageLoadActionExtension-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		44D1C5832BE140EB003AA7C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6S2SA26VAN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ImageLoadActionExtension2/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ImageLoadActionExtension2;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bgsmm.Photo-Action-Extension-Demo.ImageLoadActionExtension2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ImageLoadActionExtension/ImageLoadActionExtension2-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		44D1C5842BE140EB003AA7C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6S2SA26VAN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ImageLoadActionExtension2/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ImageLoadActionExtension2;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bgsmm.Photo-Action-Extension-Demo.ImageLoadActionExtension2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ImageLoadActionExtension/ImageLoadActionExtension2-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -530,6 +705,15 @@
 			buildConfigurations = (
 				44D1C56E2BE0B86C003AA7C9 /* Debug */,
 				44D1C56F2BE0B86C003AA7C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44D1C5822BE140EB003AA7C9 /* Build configuration list for PBXNativeTarget "ImageLoadActionExtension2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44D1C5832BE140EB003AA7C9 /* Debug */,
+				44D1C5842BE140EB003AA7C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
