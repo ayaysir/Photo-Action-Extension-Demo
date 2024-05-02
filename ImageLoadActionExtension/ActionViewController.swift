@@ -16,6 +16,19 @@ class ActionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
+        getItemFromContext()
+    }
+
+    @IBAction func done() {
+        doRequest()
+    }
+    
+    @IBAction func btnDoRequest(_ sender: UIButton) {
+        doRequest()
+    }
+    
+    
+    func getItemFromContext() {
         // Get the item[s] we're handling from the extension context.
         
         // For example, look for an image and place it into an image view.
@@ -33,7 +46,7 @@ class ActionViewController: UIViewController {
             for provider in attachments {
                 if provider.hasItemConformingToTypeIdentifier(UTType.image.identifier) {
                     // This is an image. We'll load it, then place it in our image view.
-                    weak var imageView = self.imageView
+                    // weak var imageView = self.imageView
                     
                     provider.loadImage(forTypeIdentifier: UTType.image.identifier) { image, error in
                         if let error {
@@ -41,36 +54,26 @@ class ActionViewController: UIViewController {
                             return
                         }
                         
-                        OperationQueue.main.addOperation {
-                            if let image, let imageView {
-                                DispatchQueue.main.async {
-                                    imageView.image = image
-                                }
+                        OperationQueue.main.addOperation { [weak self] in
+                            // if let image, let imageView {
+                            //     DispatchQueue.main.async {
+                            //         imageView.image = image
+                            //     }
+                            // }
+                            
+                            guard let self, let image else {
+                                return
+                            }
+                            
+                            DispatchQueue.main.async {
+                                print(image)
+                                
+                                // self.imageView.image = .init(systemName: "play.fill")
+                                self.imageView.image = image
+                                // self.imageView.contentMode = .scaleAspectFill
                             }
                         }
                     }
-                    
-                    // provider.loadItem(forTypeIdentifier: UTType.image.identifier, options: nil) { data, error in
-                    //     OperationQueue.main.addOperation {
-                    //         if let imageView {
-                    //             let contentData: Data? = {
-                    //                 return if let data = data as? Data {
-                    //                     data
-                    //                 } else if let url = data as? URL {
-                    //                     try? Data(contentsOf: url)
-                    //                 } else if let imageData = data as? UIImage {
-                    //                     imageData.pngData()
-                    //                 } else {
-                    //                     nil
-                    //                 }
-                    //             }()
-                    //             
-                    //             if let contentData {
-                    //                 imageView.image = UIImage(data: contentData)
-                    //             }
-                    //         }
-                    //     }
-                    // }
                     
                     imageFound = true
                     break
@@ -79,12 +82,13 @@ class ActionViewController: UIViewController {
             
             if imageFound {
                 // We only handle one image, so stop looking for more.
+                print("imageFound")
                 break
             }
         }
     }
-
-    @IBAction func done() {
+    
+    func doRequest() {
         // Return any edited content to the host app.
         // This template doesn't do anything, so we just echo the passed in items.
         // self.extensionContext!.completeRequest(returningItems: self.extensionContext!.inputItems, completionHandler: nil)
@@ -97,9 +101,9 @@ class ActionViewController: UIViewController {
         
         if let extensionContext {
             extensionContext.completeRequest(returningItems: [item], completionHandler: nil)
+            print("extensionContext.completeRequest가 실행되었습니다.")
         } else {
             print("extensionContext가 없습니다.")
         }
     }
-
 }
